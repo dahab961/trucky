@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>מעקב משאיות</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+  <h2 class="mb-3">📊 לוח בקרה</h2>
+  <p class="text-muted mb-4">סקירה כללית של תנועת המשאיות במתחם</p>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <div class="card text-center border-warning">
+        <div class="card-body">
+          <h5 class="card-title">⏱ זמן שהייה ממוצע</h5>
+          <p class="card-text fs-4 text-warning">4224 שעות ו־41 דקות</p>
+          <small class="text-muted">לכל ביקור במתחם</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center border-primary">
+        <div class="card-body">
+          <h5 class="card-title">🚚 סה"כ משאיות</h5>
+          <p class="card-text fs-4 text-primary">3</p>
+          <small class="text-muted">רשומות במערכת</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center border-success">
+        <div class="card-body">
+          <h5 class="card-title">🚛 משאיות במתחם</h5>
+          <p class="card-text fs-4 text-success">3</p>
+          <small class="text-muted">כרגע בשטח המתחם</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center border-info">
+        <div class="card-body">
+          <h5 class="card-title">📥 כניסות היום</h5>
+          <p class="card-text fs-4 text-info">4</p>
+          <small class="text-muted">05 במאי</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <h5 class="mb-3">🚛 משאיות במתחם כעת</h5>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          845631254 <span class="badge bg-secondary">חברה לא ידועה</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          456453213 <span class="badge bg-secondary">חברה לא ידועה</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          1234567 <span class="badge bg-success">הובלות ישראל בע״מ</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="mb-3">📄 כניסות אחרונות</h5>
+      <table class="table table-bordered bg-white">
+        <thead class="table-light">
+          <tr>
+            <th>מספר רכב</th>
+            <th>תאריך</th>
+            <th>כניסה</th>
+            <th>יציאה</th>
+            <th>סטטוס</th>
+          </tr>
+        </thead>
+        <tbody id="entryTable">
+          <tr>
+            <td>1234567</td>
+            <td>05/05/2025</td>
+            <td>14:48</td>
+            <td>—</td>
+            <td><span class="badge bg-success">בתוך המתחם</span></td>
+          </tr>
+          <tr>
+            <td>123456</td>
+            <td>05/05/2025</td>
+            <td>14:47</td>
+            <td>14:48</td>
+            <td><span class="badge bg-secondary">עזב את המתחם</span></td>
+          </tr>
+          <tr>
+            <td>456453213</td>
+            <td>05/05/2025</td>
+            <td>14:41</td>
+            <td>—</td>
+            <td><span class="badge bg-success">בתוך המתחם</span></td>
+          </tr>
+          <tr>
+            <td>845631254</td>
+            <td>05/05/2025</td>
+            <td>14:40</td>
+            <td>—</td>
+            <td><span class="badge bg-success">בתוך המתחם</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
